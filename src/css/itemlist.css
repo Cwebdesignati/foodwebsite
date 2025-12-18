@@ -1,0 +1,84 @@
+/* =========================================
+   ITEM LIST PAGE STYLE
+   ========================================= */
+
+.item-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    min-height: 80vh;
+}
+
+.item-section h2 {
+    color: #ff6600;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+/* Grid layout for items (3 per row) */
+.item-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+    padding: 0 50px;
+}
+
+/* Individual item box */
+.item-card {
+    background-color: #fff4b3;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Item image */
+.item-card img {
+    width: 180px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Item name and price */
+.item-card h3 {
+    margin: 15px 0;
+    color: #333;
+}
+
+/* Add to Cart button */
+.add-cart-btn {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-cart-btn:hover {
+    background-color: #e65c00;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 1024px) {
+    .item-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .item-grid {
+        grid-template-columns: 1fr;
+    }
+}

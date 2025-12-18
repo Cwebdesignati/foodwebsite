@@ -1,0 +1,218 @@
+/* =========================================
+   LOGIN PAGE STYLING
+   ========================================= */
+
+/* Full-page background image */
+body {
+    margin: 0;
+    /* Remove default browser margin */
+    padding: 0;
+    /* Remove default padding */
+    font-family: Arial, sans-serif;
+    /* Set font for entire page */
+
+    /* Background image settings */
+    background-image: url("../images/login-bg.jpg");
+    /* Background file path */
+    background-size: cover;
+    /* Make image cover the entire viewport */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+
+    height: 100vh;
+    /* Full viewport height */
+
+    /* Flexbox centering to align the login form in the center */
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+/* -----------------------------------------
+   Login form container
+   ----------------------------------------- */
+.login-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Dark semi-transparent background for readability */
+    padding: 40px 30px;
+    /* Space inside the form (top/bottom 40px, left/right 30px) */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    /* Shadow for 3D effect */
+    width: 320px;
+    /* Fixed width of the form */
+    color: white;
+    /* Default text color inside the form */
+    text-align: center;
+    /* Center all text inside form */
+}
+
+/* -----------------------------------------
+   Form heading (Login title)
+   ----------------------------------------- */
+.login-form h2 {
+    margin-bottom: 25px;
+    /* Space below heading */
+    font-size: 28px;
+    /* Large font size */
+    color: #ffcc00;
+    /* Bright highlight color for visibility */
+}
+
+/* -----------------------------------------
+   Labels for input fields
+   ----------------------------------------- */
+.login-form label {
+    display: block;
+    /* Make label appear on its own line */
+    text-align: left;
+    /* Align text to left */
+    margin-bottom: 5px;
+    /* Space below label */
+    font-weight: bold;
+    /* Make text bold */
+}
+
+/* -----------------------------------------
+   Input fields (username & password)
+   ----------------------------------------- */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    /* Full width of container */
+    padding: 10px;
+    /* Space inside the input */
+    margin-bottom: 20px;
+    /* Space below each input */
+    border: none;
+    /* Remove default border */
+    border-radius: 5px;
+    /* Rounded corners */
+    outline: none;
+    /* Remove focus outline */
+}
+
+/* -----------------------------------------
+   Submit button
+   ----------------------------------------- */
+.login-form input[type="submit"] {
+    width: 100%;
+    /* Full width of container */
+    padding: 12px;
+    /* Space inside button */
+    border: none;
+    /* Remove default border */
+    border-radius: 5px;
+    /* Rounded corners */
+    background-color: #ff6600;
+    /* Orange background */
+    color: white;
+    /* White text */
+    font-weight: bold;
+    /* Bold text */
+    cursor: pointer;
+    /* Cursor turns to pointer on hover */
+    transition: background-color 0.3s, transform 0.2s;
+    /* Smooth hover effects */
+}
+
+/* Hover effect for submit button */
+.login-form input[type="submit"]:hover {
+    background-color: #ffcc00;
+    /* Change button color on hover */
+    color: #333;
+    /* Change text color for contrast */
+    transform: translateY(-2px);
+    /* Slightly lift button */
+}
+
+/* Login button as link */
+.login-button {
+    display: block;
+    width: 100%;
+    /* Full width of form */
+    padding: 12px;
+    /* Space inside button */
+    background-color: #ff6600;
+    /* Orange background */
+    color: white;
+    /* White text */
+    text-align: center;
+    /* Center text */
+    font-weight: bold;
+    /* Bold text */
+    border-radius: 5px;
+    /* Rounded corners */
+    text-decoration: none;
+    /* Remove underline */
+    cursor: pointer;
+    /* Pointer on hover */
+    transition: background-color 0.3s, transform 0.2s;
+    /* Smooth hover effect */
+}
+
+/* Hover effect */
+.login-button:hover {
+    background-color: #ffcc00;
+    /* Change color on hover */
+    color: #333;
+    /* Dark text on hover */
+    transform: translateY(-2px);
+    /* Slight lift effect */
+}
+
+
+
+/* -----------------------------------------
+   Tagline above the login form
+   ----------------------------------------- */
+.login-tagline {
+    font-size: 16px;
+    /* Slightly smaller than heading */
+    margin-bottom: 20px;
+    /* Space below tagline */
+    color: #ffcc00;
+    /* Yellow text for visibility */
+    text-align: center;
+    /* Centered above the form */
+}
+
+
+/* -----------------------------------------
+   Optional links (Register / Forgot Password)
+   ----------------------------------------- */
+.login-form .form-links {
+    margin-top: 15px;
+    /* Space above links */
+    font-size: 14px;
+    /* Smaller text size */
+}
+
+.login-form .form-links a {
+    color: #ffcc00;
+    /* Yellow color links */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.login-form .form-links a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+/* -----------------------------------------
+   Responsive Design (Mobile Screens)
+   ----------------------------------------- */
+@media (max-width: 400px) {
+    .login-container {
+        width: 90%;
+        /* Reduce width for small screens */
+        padding: 30px 20px;
+        /* Reduce padding */
+    }
+}
